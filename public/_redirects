@@ -1,0 +1,3 @@
+# Netlify — redirects
+/contato    /#contato   301
+/*          /index.html 200
