@@ -102,9 +102,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hero-image-float">
-          <img src="img/sorriso.jpg" alt="Sorriso perfeito" />
-        </div>
       </section>
 
       {/* SOBRE */}

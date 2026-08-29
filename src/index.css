@@ -96,13 +96,6 @@ img { max-width: 100%; display: block; }
 .hero-stats { display: flex; gap: 48px; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
 .stat-number { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary); line-height: 1; }
 .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 6px; }
-.hero-image-float {
-  position: absolute; right: 5%; bottom: 5%; z-index: 3; width: 380px; height: 380px;
-  border-radius: 50%; overflow: hidden; border: 4px solid rgba(0,175,222,0.3);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.3); display: none;
-}
-@media (min-width: 1200px) { .hero-image-float { display: block; } }
-.hero-image-float img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ===== SECTION COMMON ===== */
 .section { padding: 100px 0; }
