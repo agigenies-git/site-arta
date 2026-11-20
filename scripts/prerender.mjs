@@ -4,7 +4,7 @@ import { build } from 'esbuild'
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { dirname, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, '..')
@@ -23,13 +23,13 @@ await build({
 const require = createRequire(import.meta.url)
 const { render } = require(resolve(root, '.ssr/entry.cjs'))
 const { SEO, BASE_URL, jsonLdLocalBusiness, jsonLdFaq, jsonLdWebsite } = await import(
-  resolve(root, 'src/data/seo.js')
+  pathToFileURL(resolve(root, 'src/data/seo.js')).href
 )
 
 const ld = (obj) =>
   `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`
 
-const ROUTES = ['/', '/profissionais', '/areas-de-atuacao', '/novidades']
+const ROUTES = ['/', '/profissionais', '/areas-de-atuacao', '/casos-clinicos', '/entrevistas', '/novidades']
 
 const shell = readFileSync(resolve(root, 'dist/index.html'), 'utf8')
 

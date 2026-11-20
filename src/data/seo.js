@@ -6,9 +6,9 @@ export const SEO = {
   '/': {
     title: 'Clínica de Odontologia em Passo Fundo | Arta Odontologia',
     description:
-      'Clínica de odontologia em Passo Fundo (RS). Endodontia, Ortodontia, Implantes, Clareamento, Odontopediatria e mais. Agende sua consulta pelo WhatsApp!',
+      'Clínica de odontologia em Passo Fundo (RS). Endodontia, Ortodontia, Implantes, Clareamento, Harmonização Orofacial, Ozonioterapia, Odontopediatria e mais. Agende sua consulta!',
     keywords:
-      'clínica de odontologia em Passo Fundo, dentista em Passo Fundo, implantes Passo Fundo, ortodontia Passo Fundo, endodontia Passo Fundo, odontopediatria Passo Fundo',
+      'clínica de odontologia em Passo Fundo, dentista em Passo Fundo, implantes Passo Fundo, ortodontia Passo Fundo, harmonização orofacial Passo Fundo, ozonioterapia Passo Fundo, endodontia Passo Fundo, odontopediatria Passo Fundo',
     h1: 'Clínica de Odontologia em Passo Fundo',
   },
   '/profissionais': {
@@ -21,16 +21,32 @@ export const SEO = {
   '/areas-de-atuacao': {
     title: 'Áreas de Atuação | Dentista em Passo Fundo – Arta Odontologia',
     description:
-      '8 especialidades da nossa clínica de odontologia em Passo Fundo: Endodontia, Ortodontia, Implantes, Clareamento, Profilaxia, Cirurgias Estéticas, Odontopediatria e Ortopedia Funcional.',
+      '10 especialidades da nossa clínica de odontologia em Passo Fundo: Endodontia, Ortodontia, Implantes, Clareamento, Profilaxia, Cirurgias Estéticas, Odontopediatria, Ortopedia Funcional, Harmonização Orofacial e Ozonioterapia.',
     keywords:
-      'tratamento de canal Passo Fundo, aparelho ortodôntico Passo Fundo, implante dentário Passo Fundo, clareamento dental Passo Fundo, odontopediatra Passo Fundo',
+      'tratamento de canal Passo Fundo, aparelho ortodôntico Passo Fundo, implante dentário Passo Fundo, harmonização orofacial Passo Fundo, ozonioterapia Passo Fundo, clareamento dental Passo Fundo, odontopediatra Passo Fundo',
     h1: 'Áreas de atuação da clínica de odontologia em Passo Fundo',
+  },
+  '/casos-clinicos': {
+    title: 'Casos Clínicos & Transformações do Sorriso | Arta Odontologia',
+    description:
+      'Veja resultados clínicos reais da Arta Odontologia em Passo Fundo: cirurgias gengivais estéticas, implantes, próteses fixas, facetas e clareamento dental.',
+    keywords:
+      'casos clínicos odontologia Passo Fundo, antes e depois dentista Passo Fundo, cirurgia gengival antes e depois, implantes dentários casos clínicos, prótese sobre implante Passo Fundo',
+    h1: 'Casos Clínicos da Arta Odontologia',
+  },
+  '/entrevistas': {
+    title: 'Entrevistas e Podcasts | Arta Odontologia – Passo Fundo',
+    description:
+      'Ouça as entrevistas e participações dos cirurgiões-dentistas da Arta Odontologia em rádios e podcasts (Rádio UPF + e Spotify) sobre implantes dentários, saúde bucal e inovações.',
+    keywords:
+      'entrevistas odontologia Passo Fundo, podcast odontologia Spotify, rádio UPF implantes dentários, Dr Cristiano Magagnin Arta Odontologia, tecnologia odontológica',
+    h1: 'Entrevistas e Podcasts da Arta Odontologia',
   },
   '/novidades': {
     title: 'Novidades | Arta Odontologia – Clínica de Odontologia em Passo Fundo',
     description:
       'Novidades da Arta Odontologia: mídia, entrevistas, casos clínicos, depoimentos e publicações científicas do nosso time em Passo Fundo.',
-    keywords: 'novidades clínica de odontologia em Passo Fundo, casos clínicos odontologia',
+    keywords: 'novidades clínica de odontologia em Passo Fundo, casos clínicos odontologia, entrevistas Arta Odontologia',
     h1: 'Novidades da clínica de odontologia em Passo Fundo',
   },
 }
@@ -47,7 +63,7 @@ export const FAQ = [
   },
   {
     q: 'Quais especialidades a clínica de odontologia em Passo Fundo oferece?',
-    a: 'São 8 áreas de atuação: Tratamento Endodôntico (canal), Aparelhos Ortodônticos, Implantes e Próteses, Clareamento Dental, Profilaxia e tratamento das gengivas, Cirurgias Gengivais Estéticas, Odontopediatria e Ortopedia Funcional dos Maxilares.',
+    a: 'São 10 áreas de atuação: Tratamento Endodôntico (canal), Aparelhos Ortodônticos, Implantes e Próteses, Clareamento Dental, Profilaxia e tratamento das gengivas, Cirurgias Gengivais Estéticas, Odontopediatria, Ortopedia Funcional dos Maxilares, Harmonização Orofacial e Ozonioterapia.',
   },
   {
     q: 'Como agendar uma consulta?',
@@ -69,6 +85,8 @@ const SERVICOS_SCHEMA = [
   'Cirurgias Gengivais Estéticas',
   'Odontopediatria',
   'Ortopedia Funcional dos Maxilares',
+  'Harmonização Orofacial',
+  'Ozonioterapia na Odontologia',
 ]
 
 export function jsonLdLocalBusiness() {
@@ -79,7 +97,7 @@ export function jsonLdLocalBusiness() {
     name: 'Arta Odontologia',
     legalName: 'ARTA SERVIÇOS DE ODONTOLOGIA LTDA',
     description:
-      'Clínica de odontologia em Passo Fundo fundada em 2018, com especialistas em Endodontia, Ortodontia, Implantodontia, Odontopediatria e mais.',
+      'Clínica de odontologia em Passo Fundo fundada em 2018, com especialistas em Endodontia, Ortodontia, Implantodontia, Harmonização Orofacial, Ozonioterapia, Odontopediatria e mais.',
     url: BASE_URL,
     telephone: '+555433126964',
     email: 'contato@artaodontologia.com.br',

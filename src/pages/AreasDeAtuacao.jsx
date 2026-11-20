@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useRevealAll } from '../hooks/useRevealAll'
 import { AREAS } from '../data/areas'
 import { zap } from '../data/site'
+import { AreaIcon } from '../components/Icons'
 
 function ProCard({ profissional }) {
   if (!profissional) return null
@@ -34,7 +35,10 @@ export default function AreasDeAtuacao() {
           </p>
           <div className="chips">
             {AREAS.map((a) => (
-              <a href={`#${a.id}`} key={a.id}>{a.icon} {a.titulo.split(' (')[0]}</a>
+              <a href={`#${a.id}`} key={a.id}>
+                <AreaIcon id={a.id} size={16} />
+                <span>{a.titulo.split(' (')[0]}</span>
+              </a>
             ))}
           </div>
         </div>
@@ -80,7 +84,8 @@ export default function AreasDeAtuacao() {
             <a href={zap('Olá, vim do site e gostaria de agendar uma avaliação')} className="btn btn-primary" target="_blank" rel="noreferrer">
               Agendar Avaliação
             </a>
-            <Link to="/profissionais" className="btn btn-white">Conheça os Profissionais</Link>
+            <Link to="/casos-clinicos" className="btn btn-white">Ver Casos Clínicos</Link>
+            <Link to="/profissionais" className="btn btn-outline" style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.4)' }}>Conheça os Profissionais</Link>
           </div>
         </div>
       </section>

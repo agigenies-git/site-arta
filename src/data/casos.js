@@ -1,0 +1,181 @@
+// ===== Dados de Casos Clínicos & Transformações do Sorriso =====
+
+export const CATEGORIAS_CASOS = [
+  { id: 'todos', label: 'Todos os Casos' },
+  { id: 'gengivais', label: 'Cirurgias Gengivais' },
+  { id: 'implantes', label: 'Implantes & Próteses' },
+  { id: 'estetica', label: 'Facetas & Estética' },
+  { id: 'clareamento', label: 'Clareamento' },
+  { id: 'ortodontia', label: 'Ortodontia' },
+  { id: 'endodontia', label: 'Endodontia' },
+]
+
+export const CASOS_CLINICOS = [
+  {
+    id: 'gengival-1',
+    categoria: 'gengivais',
+    categoriaLabel: 'Cirurgias Gengivais Estéticas',
+    titulo: 'Aumento de Coroa Clínica e Alinhamento Gengival',
+    subtitulo: 'Correção de assimetria da margem gengival e restabelecimento da proporção dental anterior.',
+    tipo: 'antes-depois',
+    imagemAntes: 'img/casos/gengival-1-antes.jpg',
+    imagemDepois: 'img/casos/gengival-1-depois.jpg',
+    descricao:
+      'Caso planejado para restabelecer a harmonia do contorno gengival e a proporção estética dos dentes anteriores. O procedimento minimamente invasivo de aumento de coroa clínica expôs a estrutura dental natural na medida certa, criando um arco do sorriso simétrico e iluminado.',
+    destaques: [
+      'Planejamento estético periodontal individualizado',
+      'Harmonização precisa do zênite gengival',
+      'Procedimento rápido, seguro e de cicatrização previsível',
+    ],
+    especialista: 'Equipe Arta Odontologia',
+    ctaMsg: 'Olá! Vi o caso clínico de cirurgia gengival estética no site e gostaria de agendar uma avaliação para o meu sorriso.',
+  },
+  {
+    id: 'gengival-2',
+    categoria: 'gengivais',
+    categoriaLabel: 'Cirurgias Gengivais Estéticas',
+    titulo: 'Plástica Periodontal para Correção de Sorriso Gengival',
+    subtitulo: 'Remodelação tecidual anatômica para equilíbrio equilibrado entre lábios, dentes e gengiva.',
+    tipo: 'antes-depois',
+    imagemAntes: 'img/casos/gengival-2-antes.jpg',
+    imagemDepois: 'img/casos/gengival-2-depois.jpg',
+    descricao:
+      'O paciente apresentava sorriso com excesso aparente de tecido gengival sobre a coroa clínica dos dentes anteriores. A plástica periodontal devolveu a proporção áurea entre largura e altura dos dentes, proporcionando um sorriso mais aberto, jovem e natural.',
+    destaques: [
+      'Contorno gengival anatômico respeitando o espaço biológico',
+      'Proporção ideal entre exposição dental e gengival',
+      'Conforto pós-operatório com técnicas refinadas',
+    ],
+    especialista: 'Equipe Arta Odontologia',
+    ctaMsg: 'Olá! Gostaria de saber mais sobre a cirurgia periodontal para correção de sorriso gengival.',
+  },
+  {
+    id: 'implante-1',
+    categoria: 'implantes',
+    categoriaLabel: 'Implantes & Próteses Dentárias',
+    titulo: 'Reabilitação Oral com Implante e Prótese Cerâmica Fixa',
+    subtitulo: 'Substituição definitiva de elemento dental com recuperação plena da mastigação e estética.',
+    tipo: 'antes-depois',
+    imagemAntes: 'img/casos/implante-1-antes.jpg',
+    imagemDepois: 'img/casos/implante-1-depois.jpg',
+    descricao:
+      'Reabilitação funcional e estética definitiva através da instalação de implante dentário de alta biocompatibilidade, seguido de confecção de coroa protética em cerâmica pura. O resultado reproduz com fidelidade a anatomia e o perfil de emergência natural da gengiva.',
+    destaques: [
+      'Implante com tecnologia de ponta e rápida osseointegração',
+      'Prótese cerâmica metal-free altamente estética e resistente',
+      'Recuperação da eficiência mastigatória e segurança ao falar e sorrir',
+    ],
+    especialista: 'Dr. Cristiano Magagnin · CRO-RS 13903',
+    ctaMsg: 'Olá! Vi o caso de reabilitação com implantes no site da Arta e gostaria de agendar uma avaliação com o Dr. Cristiano.',
+  },
+  {
+    id: 'implante-2',
+    categoria: 'implantes',
+    categoriaLabel: 'Implantes & Próteses Dentárias',
+    titulo: 'Reabilitação Protética Integrada sobre Implantes',
+    subtitulo: 'Recuperação estética e estabilidade oclusal com prótese fixa personalizada.',
+    tipo: 'antes-depois',
+    imagemAntes: 'img/casos/implante-2-antes.jpg',
+    imagemDepois: 'img/casos/implante-2-depois.jpg',
+    descricao:
+      'Planejamento reabilitador personalizado com reposição dental guiada por implantes e confecção de prótese fixa com ajuste oclusal milimétrico. Devolveu ao paciente conforto mastigatório absoluto, estabilidade óssea e harmonia com os dentes adjacentes.',
+    destaques: [
+      'Planejamento digital com previsibilidade estética',
+      'Estabilidade funcional e proteção dos dentes vizinhos',
+      'Acabamento com textura e translucidez idênticas ao dente natural',
+    ],
+    especialista: 'Dr. Cristiano Magagnin · CRO-RS 13903',
+    ctaMsg: 'Olá! Gostaria de agendar uma consulta para avaliação de implantes dentários com o Dr. Cristiano Magagnin.',
+  },
+  {
+    id: 'facetas-1',
+    categoria: 'estetica',
+    categoriaLabel: 'Facetas & Estética Dental',
+    titulo: 'Transformação Estética com Facetas Cerâmicas',
+    subtitulo: 'Harmonização de cor, proporções e formato com preservação da estrutura dental.',
+    tipo: 'registro',
+    imagemUnica: 'img/casos/facetas-estetica.jpg',
+    descricao:
+      'Facetas e lentes de contato dentais em cerâmica de alta resistência, confeccionadas sob medida para harmonizar cor, formato e proporções dos dentes. Procedimento minimamente invasivo que preserva a estrutura dental saudável.',
+    destaques: [
+      'Cerâmica pura com brilho, textura e translucidez de alta fidelidade',
+      'Preservação máxima da estrutura dental natural',
+      'Planejamento estético personalizado alinhado aos traços faciais',
+    ],
+    especialista: 'Equipe Arta Odontologia',
+    ctaMsg: 'Olá! Tenho interesse em facetas dentárias e gostaria de fazer uma avaliação estética do meu sorriso na Arta.',
+  },
+  {
+    id: 'protese-implante-1',
+    categoria: 'implantes',
+    categoriaLabel: 'Implantes & Próteses Dentárias',
+    titulo: 'Prótese Sobre Implante com Adaptação Anatômica de Precisão',
+    subtitulo: 'Perfil de emergência gengival e assentamento passivo da prótese fixa.',
+    tipo: 'registro',
+    imagemUnica: 'img/casos/protese-sobre-implante.webp',
+    descricao:
+      'Demonstração da união perfeita entre o pilar protético e a coroa cerâmica sobre implante, garantindo higienização facilitada, saúde dos tecidos peri-implantares e longevidade do tratamento reabilitador.',
+    destaques: [
+      'Adaptação marginal micrométrica contra infiltrações',
+      'Saúde peri-implantar e preservação do contorno gengival',
+      'Fácil higienização e manutenção preventiva regular',
+    ],
+    especialista: 'Dr. Cristiano Magagnin · CRO-RS 13903',
+    ctaMsg: 'Olá! Gostaria de agendar uma consulta sobre próteses fixas e implantes na Arta Odontologia.',
+  },
+  {
+    id: 'clareamento-1',
+    categoria: 'clareamento',
+    categoriaLabel: 'Clareamento Dental',
+    titulo: 'Clareamento Dental Supervisionado',
+    subtitulo: 'Sorriso mais branco, luminoso e seguro para a integridade do esmalte.',
+    tipo: 'registro',
+    imagemUnica: 'img/casos/clareamento-dental.webp',
+    descricao:
+      'Protocolo clareador supervisionado por especialista, com géis de alta tecnologia que quebram as moléculas de pigmento sem agredir o esmalte. O acompanhamento profissional previne a sensibilidade e proporciona um clareamento homogêneo e duradouro.',
+    destaques: [
+      'Protocolo individualizado com proteção gengival ativa',
+      'Clareamento seguro sem agressão ao esmalte dental',
+      'Orientação preventiva contra sensibilidade e manchas',
+    ],
+    especialista: 'Equipe Arta Odontologia',
+    ctaMsg: 'Olá! Gostaria de informações sobre os procedimentos de clareamento dental na Arta Odontologia.',
+  },
+  {
+    id: 'ortodontia-1',
+    categoria: 'ortodontia',
+    categoriaLabel: 'Ortodontia & Alinhadores',
+    titulo: 'Alinhamento Dental e Correção Oclusal',
+    subtitulo: 'Posicionamento correto dos dentes para harmonia facial e equilíbrio mastigatório.',
+    tipo: 'registro',
+    imagemUnica: 'img/casos/ortodontia-caso.png',
+    descricao:
+      'Tratamento ortodôntico planejado para corrigir apinhamentos, desvios de mordida e espaçamentos indesejados. O correto posicionamento dos dentes no arco melhora a distribuição de forças mastigatórias e facilita a higiene diária.',
+    destaques: [
+      'Diagnóstico cefalométrico minucioso caso a caso',
+      'Opções com aparelhos convencionais, estéticos e alinhadores',
+      'Melhora estética do arco dental e prevenção de desgastes oclusais',
+    ],
+    especialista: 'Dra. Daniela Lange · CRO-RS 11245',
+    ctaMsg: 'Olá! Gostaria de agendar uma avaliação ortodôntica com a Dra. Daniela Lange na Arta.',
+  },
+  {
+    id: 'endodontia-1',
+    categoria: 'endodontia',
+    categoriaLabel: 'Endodontia com Microscopia',
+    titulo: 'Preservação Dental com Microscopia Operatória',
+    subtitulo: 'Tratamento endodôntico de alta precisão salvando o elemento dental natural.',
+    tipo: 'registro',
+    imagemUnica: 'img/casos/endodontia-microscopia.jpg',
+    descricao:
+      'Tratamento de canal de alta complexidade realizado sob magnificação visual com microscópio cirúrgico. Permite a localização de canais extras, desinfecção profunda e selamento tridimensional completo, preservando dentes que poderiam ser perdidos.',
+    destaques: [
+      'Magnificação óptica de até 20x com microscópio cirúrgico',
+      'Procedimento indolor com anestesia computadorizada e instrumentação rotatória',
+      'Máxima preservação do elemento dental original na boca',
+    ],
+    especialista: 'Dr. Mateus Hartmann · CRO-RS 11886',
+    ctaMsg: 'Olá! Preciso de uma avaliação para tratamento de canal com o Dr. Mateus Hartmann na Arta Odontologia.',
+  },
+]
+

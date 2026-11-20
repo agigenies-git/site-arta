@@ -13,7 +13,6 @@ export const AREAS = [
   {
     id: 'endo',
     num: '01',
-    icon: '🦷',
     label: 'Especialidade',
     titulo: 'Tratamento Endodôntico',
     img: 'img/clinic-3.jpg',
@@ -31,7 +30,7 @@ export const AREAS = [
     profissional: {
       nome: 'Dr. Mateus Hartmann',
       sub: 'CRO-RS 11886 · Doutor em Endodontia – FOP-Unicamp',
-      foto: 'img/prof-mateus.jpg',
+      foto: 'img/prof-mateus-avatar.jpg',
     },
     cta: 'Agendar Avaliação',
     ctaMsg: 'Olá, gostaria de agendar uma avaliação de Endodontia (tratamento de canal)',
@@ -39,7 +38,6 @@ export const AREAS = [
   {
     id: 'orto',
     num: '02',
-    icon: '😁',
     label: 'Especialidade',
     titulo: 'Aparelhos Ortodônticos',
     img: 'img/clinic-4.jpg',
@@ -57,7 +55,7 @@ export const AREAS = [
     profissional: {
       nome: 'Dra. Daniela Lange',
       sub: 'CRO-RS 11245 · Especialista em Ortodontia – UPF',
-      foto: 'img/prof-daniela.jpg',
+      foto: 'img/prof-daniela-avatar.jpg',
     },
     cta: 'Agendar Avaliação',
     ctaMsg: 'Olá, gostaria de agendar uma avaliação de Ortodontia (aparelhos)',
@@ -65,7 +63,6 @@ export const AREAS = [
   {
     id: 'implante',
     num: '03',
-    icon: '🔩',
     label: 'Especialidade',
     titulo: 'Implantes e Próteses',
     img: 'img/clinic-5.jpg',
@@ -83,7 +80,7 @@ export const AREAS = [
     profissional: {
       nome: 'Dr. Cristiano Magagnin',
       sub: 'CRO-RS 13903 · Especialista em Implantodontia – CEOM/IMED',
-      foto: 'img/prof-cristiano.jpg',
+      foto: 'img/prof-cristiano-avatar.jpg',
     },
     cta: 'Agendar Avaliação',
     ctaMsg: 'Olá, gostaria de agendar uma avaliação de Implantes e Próteses',
@@ -91,7 +88,6 @@ export const AREAS = [
   {
     id: 'clareamento',
     num: '04',
-    icon: '✨',
     label: 'Estética',
     titulo: 'Clareamento Dental',
     img: 'img/clinic-6.jpg',
@@ -113,7 +109,6 @@ export const AREAS = [
   {
     id: 'profilaxia',
     num: '05',
-    icon: '🧼',
     label: 'Prevenção',
     titulo: 'Profilaxia (limpeza) e Tratamento das Gengivas',
     img: 'img/clinic-7.jpg',
@@ -135,7 +130,6 @@ export const AREAS = [
   {
     id: 'cirurgia',
     num: '06',
-    icon: '💫',
     label: 'Estética',
     titulo: 'Cirurgias Gengivais Estéticas',
     img: 'img/clinic-1.jpg',
@@ -157,7 +151,6 @@ export const AREAS = [
   {
     id: 'odontopediatria',
     num: '07',
-    icon: '🧒',
     label: 'Especialidade',
     titulo: 'Odontopediatria',
     img: 'img/srv-odontopediatria.jpg',
@@ -175,7 +168,7 @@ export const AREAS = [
     profissional: {
       nome: 'Dra. Emeli Miotto',
       sub: 'CRO-RS 19822 · Especialista em Odontopediatria – ABORS',
-      foto: 'img/prof-emeli.jpg',
+      foto: 'img/prof-emeli-avatar.jpg',
     },
     cta: 'Agendar Consulta',
     ctaMsg: 'Olá, gostaria de agendar uma consulta de Odontopediatria',
@@ -183,7 +176,6 @@ export const AREAS = [
   {
     id: 'ortopedia',
     num: '08',
-    icon: '🦴',
     label: 'Especialidade',
     titulo: 'Ortopedia Funcional dos Maxilares',
     img: 'img/srv-ortopedia.jpg',
@@ -201,9 +193,61 @@ export const AREAS = [
     profissional: {
       nome: 'Dra. Emeli Miotto',
       sub: 'CRO-RS 19822 · Ortopedia Funcional dos Maxilares – SOBRACOM',
-      foto: 'img/prof-emeli.jpg',
+      foto: 'img/prof-emeli-avatar.jpg',
     },
     cta: 'Agendar Avaliação',
     ctaMsg: 'Olá, gostaria de saber mais sobre Ortopedia Funcional dos Maxilares',
+  },
+  {
+    id: 'harmonizacao',
+    num: '09',
+    label: 'Estética & Função',
+    titulo: 'Harmonização Orofacial',
+    img: 'img/sorriso.jpg',
+    resumo:
+      'Procedimentos estéticos e funcionais que valorizam a beleza natural do rosto, rejuvenescem a pele e equilibram o sorriso com os traços faciais.',
+    paragrafos: [
+      'A Harmonização Orofacial (HOF) reúne procedimentos minimamente invasivos planejados para equilibrar as proporções faciais em perfeita sintonia com a estética do sorriso, proporcionando rejuvenescimento, simetria e bem-estar.',
+      'Os tratamentos incluem aplicação de toxina botulínica para suavizar rugas e linhas de expressão, além do suporte terapêutico no alívio de bruxismo e dores na articulação temporomandibular (ATM). Também realizamos preenchimentos com ácido hialurônico (labial, malar e contorno mandibular) e estímulo de colágeno, sempre priorizando a harmonia e naturalidade da sua expressão.',
+    ],
+    highlights: [
+      'Equilíbrio estético e funcional entre o sorriso e a face',
+      'Toxina botulínica estética e terapêutica (controle do bruxismo e dores na ATM)',
+      'Preenchimentos com ácido hialurônico e bioestimulação de colágeno',
+      'Resultados elegantes, personalizados e com total naturalidade',
+    ],
+    profissional: {
+      nome: 'Dra. Daniela Lange',
+      sub: 'CRO-RS 11245 · Ortodontia e Harmonização Orofacial',
+      foto: 'img/prof-daniela-avatar.jpg',
+    },
+    cta: 'Agendar Avaliação HOF',
+    ctaMsg: 'Olá, gostaria de agendar uma avaliação de Harmonização Orofacial',
+  },
+  {
+    id: 'ozonioterapia',
+    num: '10',
+    label: 'Inovação & Biologia',
+    titulo: 'Ozonioterapia',
+    img: 'img/clinic-2.jpg',
+    resumo:
+      'Tecnologia biológica com potente ação antimicrobiana, anti-inflamatória e cicatrizante, que potencializa tratamentos odontológicos com conforto.',
+    paragrafos: [
+      'A Ozonioterapia na Odontologia é uma terapia biológica moderna e minimamente invasiva que utiliza o gás ozônio medicinal por suas notáveis propriedades bactericidas, fungicidas, virucidas e de regeneração celular.',
+      'Pode ser aplicada como adjuvante em tratamentos de canal para uma desinfecção profunda e segura, na recuperação e controle de doenças da gengiva (periodontia), no alívio de dores pós-operatórias, na cicatrização acelerada de cirurgias e no tratamento de aftas, herpes e sensibilidade dentária.',
+    ],
+    highlights: [
+      'Potente ação antimicrobiana natural e biocompatível',
+      'Acelera a cicatrização e regeneração de tecidos bucais',
+      'Reduz inflamação e desconforto pós-cirúrgico',
+      'Terapia coadjuvante em endodontia, periodontia e cirurgias',
+    ],
+    profissional: {
+      nome: 'Dra. Daniela Lange',
+      sub: 'CRO-RS 11245 · Especialista em Ortodontia e Ozonioterapia',
+      foto: 'img/prof-daniela-avatar.jpg',
+    },
+    cta: 'Saber Mais sobre Ozonioterapia',
+    ctaMsg: 'Olá, gostaria de saber mais sobre Ozonioterapia na odontologia',
   },
 ]

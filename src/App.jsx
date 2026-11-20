@@ -8,6 +8,8 @@ import { usePageMeta } from './hooks/usePageMeta'
 import Home from './pages/Home'
 import Profissionais from './pages/Profissionais'
 import AreasDeAtuacao from './pages/AreasDeAtuacao'
+import Entrevistas from './pages/Entrevistas'
+import CasosClinicos from './pages/CasosClinicos'
 import Novidades from './pages/Novidades'
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profissionais" element={<Profissionais />} />
           <Route path="/areas-de-atuacao" element={<AreasDeAtuacao />} />
+          <Route path="/casos-clinicos" element={<CasosClinicos />} />
+          <Route path="/entrevistas" element={<Entrevistas />} />
           <Route path="/novidades" element={<Novidades />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

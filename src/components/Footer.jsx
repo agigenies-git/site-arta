@@ -11,6 +11,8 @@ const LABELS_CURTOS = {
   cirurgia: 'Cirurgias Gengivais',
   odontopediatria: 'Odontopediatria',
   ortopedia: 'Ortopedia Funcional',
+  harmonizacao: 'Harmonização Orofacial',
+  ozonioterapia: 'Ozonioterapia',
 }
 
 export default function Footer() {
@@ -58,6 +60,7 @@ export default function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/profissionais">Profissionais</Link></li>
               <li><Link to="/areas-de-atuacao">Áreas de Atuação</Link></li>
+              <li><Link to="/casos-clinicos">Casos Clínicos</Link></li>
               <li><Link to="/novidades">Novidades</Link></li>
               <li><Link to="/#contato">Contato</Link></li>
             </ul>

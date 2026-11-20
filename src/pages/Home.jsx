@@ -4,6 +4,17 @@ import { useRevealAll } from '../hooks/useRevealAll'
 import { AREAS } from '../data/areas'
 import { CONTATO, HORARIOS, zap } from '../data/site'
 import { FAQ } from '../data/seo'
+import {
+  AreaIcon,
+  IconeMissao,
+  IconeVisao,
+  IconeValores,
+  IconeExcelencia,
+  IconeEndereco,
+  IconeTelefone,
+  IconeEmail,
+  IconeRelogio,
+} from '../components/Icons'
 
 const IconeZap = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -97,7 +108,7 @@ export default function Home() {
               <div className="stat-label">Pacientes Atendidos</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">8</div>
+              <div className="stat-number">10</div>
               <div className="stat-label">Especialidades</div>
             </div>
           </div>
@@ -121,22 +132,22 @@ export default function Home() {
               <p className="reveal reveal-delay-2">A Arta Odontologia é uma clínica de odontologia em Passo Fundo fundada em 2018 por 3 cirurgiões dentistas que trabalham juntos desde 1999, com um time de profissionais experientes e especializados. Nossa missão é melhorar a qualidade de vida, devolvendo e mantendo a saúde oral das pessoas.</p>
               <div className="values-grid">
                 <div className="value-card reveal reveal-delay-2">
-                  <div className="value-icon">🎯</div>
+                  <div className="value-icon"><IconeMissao size={26} /></div>
                   <h4>Missão</h4>
                   <p>Melhorar a qualidade de vida, devolvendo e mantendo a saúde oral das pessoas.</p>
                 </div>
                 <div className="value-card reveal reveal-delay-3">
-                  <div className="value-icon">👁️</div>
+                  <div className="value-icon"><IconeVisao size={26} /></div>
                   <h4>Visão</h4>
                   <p>Ser referência em Passo Fundo e região, atendendo necessidades e expectativas.</p>
                 </div>
                 <div className="value-card reveal reveal-delay-4">
-                  <div className="value-icon">💎</div>
+                  <div className="value-icon"><IconeValores size={26} /></div>
                   <h4>Valores</h4>
                   <p>Responsabilidade, qualidade, integridade e humanização em cada atendimento.</p>
                 </div>
                 <div className="value-card reveal reveal-delay-5">
-                  <div className="value-icon">⭐</div>
+                  <div className="value-icon"><IconeExcelencia size={26} /></div>
                   <h4>Excelência</h4>
                   <p>Equipamentos modernos, biossegurança e atendimento cordial e exclusivo.</p>
                 </div>
@@ -160,7 +171,9 @@ export default function Home() {
                 <div className="service-image">
                   <img src={a.img} alt={a.titulo} />
                   <div className="service-image-overlay"></div>
-                  <div className="service-icon-float">{a.icon}</div>
+                  <div className="service-icon-float">
+                    <AreaIcon id={a.id} size={26} color="#ffffff" />
+                  </div>
                 </div>
                 <div className="service-body">
                   <h3>{a.titulo}</h3>
@@ -220,14 +233,14 @@ export default function Home() {
 
               <div className="contact-details">
                 <div className="contact-item reveal reveal-delay-2">
-                  <div className="contact-item-icon">📍</div>
+                  <div className="contact-item-icon"><IconeEndereco size={22} /></div>
                   <div className="contact-item-text">
                     <h4>Endereço</h4>
                     <p>{CONTATO.endereco.linha1}<br />{CONTATO.endereco.linha2}<br />{CONTATO.endereco.linha3}</p>
                   </div>
                 </div>
                 <div className="contact-item reveal reveal-delay-3">
-                  <div className="contact-item-icon">📞</div>
+                  <div className="contact-item-icon"><IconeTelefone size={22} /></div>
                   <div className="contact-item-text">
                     <h4>Telefones</h4>
                     <p>
@@ -240,7 +253,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="contact-item reveal reveal-delay-4">
-                  <div className="contact-item-icon">✉️</div>
+                  <div className="contact-item-icon"><IconeEmail size={22} /></div>
                   <div className="contact-item-text">
                     <h4>E-mail</h4>
                     <p><a href={`mailto:${CONTATO.email}`}>{CONTATO.email}</a></p>
@@ -249,7 +262,7 @@ export default function Home() {
               </div>
 
               <div className="hours-card reveal reveal-delay-5">
-                <h4>🕐 Horário de Funcionamento</h4>
+                <h4><IconeRelogio size={18} /> Horário de Funcionamento</h4>
                 <ul className="hours-list">
                   {HORARIOS.map((h) => (
                     <li key={h.dia} className={h.fechado ? 'closed' : ''}>

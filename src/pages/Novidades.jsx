@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useRevealAll } from '../hooks/useRevealAll'
 import { CATEGORIAS, POSTS } from '../data/novidades'
 import { SOCIAL, zap } from '../data/site'
+import { CategoriaBadgeIcon } from '../components/Icons'
 
 const IconeInsta = (props) => (
   <svg viewBox="0 0 24 24" {...props}>
@@ -43,19 +44,40 @@ export default function Novidades() {
             <p className="section-subtitle reveal reveal-delay-2">Navegue pelo nosso conteúdo e conheça mais sobre nosso trabalho, equipe, ciência e resultados.</p>
           </div>
           <div className="categories-grid">
-            {CATEGORIAS.map((c, i) => (
-              <div className={`category-card reveal reveal-delay-${i % 4}`} key={c.id} onClick={rolarParaFeed}>
-                <div className="category-icon">
-                  <svg viewBox="0 0 24 24"><path d={c.iconePath} /></svg>
+            {CATEGORIAS.map((c, i) => {
+              const cardContent = (
+                <>
+                  <div className="category-icon">
+                    <svg viewBox="0 0 24 24"><path d={c.iconePath} /></svg>
+                  </div>
+                  <h3>{c.titulo}</h3>
+                  <p>{c.desc}</p>
+                  <div className="category-count">
+                    <CategoriaBadgeIcon id={c.id} size={14} />
+                    <span>{c.contador}</span>
+                  </div>
+                </>
+              )
+
+              return c.link ? (
+                <Link
+                  to={c.link}
+                  className={`category-card reveal reveal-delay-${i % 4}`}
+                  key={c.id}
+                  style={{ textDecoration: 'none' }}
+                >
+                  {cardContent}
+                </Link>
+              ) : (
+                <div
+                  className={`category-card reveal reveal-delay-${i % 4}`}
+                  key={c.id}
+                  onClick={rolarParaFeed}
+                >
+                  {cardContent}
                 </div>
-                <h3>{c.titulo}</h3>
-                <p>{c.desc}</p>
-                <div className="category-count">
-                  <span>{c.emoji}</span>
-                  <span>{c.contador}</span>
-                </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
